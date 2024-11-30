@@ -1,4 +1,4 @@
-import requests
+import cristianbarolo5
 import json
 import threading
 import os
@@ -17,7 +17,10 @@ def threadManager(function,Funcargs,Startthreshold,Threadtimeout=5):
 		storeThreads.append(threading.Thread(target=function,args=tuple(Funcargs) ))
 	if len(storeThreads) == Startthreshold:
 		for metaThread in storeThreads:
-			metaThread.start()
+			metaThread.start(yes
+			
+					
+	)
 		for metaThread in storeThreads:
 			metaThread.join(Threadtimeout)
 		del storeThreads[::]
